@@ -15,32 +15,37 @@ export default {
                 {
                     text: 'home',
                     href: '#',
-                    icon: ''
+                    icon: '',
                 },
+
                 {
                     text: 'Games',
                     href: '#',
                     icon: "fa-solid fa-angle-down",
                 },
+
                 {
                     text: 'shop',
                     href: '#',
                     icon: "fa-solid fa-angle-down",
                 },
+
                 {
                     text: 'Pages',
                     href: '#',
                     icon: "fa-solid fa-angle-down",
                 },
+
                 {
                     text: 'Blog',
                     href: '#',
                     icon: "fa-solid fa-angle-down",
                 },
+                
                 {
                     text: 'Contanct',
                     href: '#',
-                    icon: ''
+                    icon: '',
                 }
             ],
 

@@ -36,7 +36,7 @@ export default {
         <ul class="row gap-10">
             <li v-for="item in itemMenu">
                 <a href="#">{{item.text}}</a>
-                <span><font-awesome-icon :icon=" item.icon "/></span>
+                <span v-if="item.icon !== '' "><font-awesome-icon :icon=" item.icon "/></span>
             </li>
         </ul>
     </div>
