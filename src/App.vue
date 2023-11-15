@@ -8,6 +8,6 @@
 // import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
