@@ -2,10 +2,11 @@
 
 <script >
 // import { ref } from 'vue'
+import HeaderMenu from './HeaderMenu.vue';
 
 export default {
     components: {
-        
+        HeaderMenu
     },
 
     data() {
@@ -13,7 +14,8 @@ export default {
             navHeader: [
                 {
                     text: 'home',
-                    href: '#'
+                    href: '#',
+                    icon: ''
                 },
                 {
                     text: 'Games',
@@ -37,7 +39,8 @@ export default {
                 },
                 {
                     text: 'Contanct',
-                    href: '#'
+                    href: '#',
+                    icon: ''
                 }
             ],
 
@@ -69,36 +72,11 @@ export default {
               <div class="logo">
                 <img src="/img/logo.png" alt="">
               </div>
-              <div class="menu-header ">
-                <ul class="row gap-10">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Games</a>
-                        <span><font-awesome-icon icon="fa-solid fa-angle-down" /></span>
-                    </li>
-                    <li>
-                        <a href="#">Shop</a>
-                        <span><font-awesome-icon icon="fa-solid fa-angle-down" /></span>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                         <span><font-awesome-icon icon="fa-solid fa-angle-down" /></span>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                        <span><font-awesome-icon icon="fa-solid fa-angle-down" /></span>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-              </div>
+              <HeaderMenu :itemMenu="navHeader"/>
               <div class="menu-left-header">
                 <ul class="row gap-10">
                     <li><a href="#">i-carrello</a></li>
-                    <button>Live streaming</button>
+                    <button class="btn">Live streaming</button>
                 </ul>
               </div>
           </nav>
@@ -118,10 +96,18 @@ export default {
         justify-content: space-between;
         align-items: center;
 
-        .main-header { 
-
-        }
     }
+}
+
+.btn {
+    background-color: green ;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 999px;
+    line-height: 30px;
+    padding: 0px 6px;
+
 }
 
 .gap-10 {
