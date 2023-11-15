@@ -14,7 +14,11 @@ import {
     faBasketShopping,
     faHeart,
     faCircleXmark,
-    faAngleDown
+    faAngleDown,
+    faCartShopping,
+    faAnglesRight,
+    faCirclePlay,
+    faPlay
     
  } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,7 +27,11 @@ import {
     faBasketShopping,
     faHeart,
     faCircleXmark,
-    faAngleDown
+    faAngleDown,
+    faCartShopping,
+    faAnglesRight,
+    faCirclePlay,
+    faPlay
 )
 
 createApp(App)

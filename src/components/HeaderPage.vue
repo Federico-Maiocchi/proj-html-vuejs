@@ -41,7 +41,7 @@ export default {
                     href: '#',
                     icon: "fa-solid fa-angle-down",
                 },
-                
+
                 {
                     text: 'Contanct',
                     href: '#',
@@ -76,15 +76,17 @@ export default {
           <nav class="nav-bar row">
               <div class="logo">
                 <img src="/img/logo.png" alt="">
-              </div>
-              <HeaderMenu :itemMenu="navHeader"/>
-              <div class="menu-left-header">
-                <ul class="row gap-10">
-                    <li><a href="#">i-carrello</a></li>
-                    <button class="btn">Live streaming</button>
-                </ul>
-              </div>
-          </nav>
+                </div>
+                <div class="row gap-35">
+                    <HeaderMenu :itemMenu="navHeader"/>
+                    <div class="menu-left-header">
+                        <ul class="row gap-10">
+                            <li><a href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a></li>
+                            <button class="btn">Live streaming</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
   </template>
@@ -94,7 +96,6 @@ export default {
 
 .header-page {
     color: $color-light;
-    background-color: black;
     padding: 20px 0;
 
     .row{
@@ -102,20 +103,30 @@ export default {
         align-items: center;
 
     }
+
+    li:hover {
+        color: #94cb53;
+    }
 }
 
-.btn {
-    background-color: green ;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 999px;
-    line-height: 30px;
-    padding: 0px 6px;
+// .btn {
+//     background-color: #08cb7b ;
+//     color: #30405f;
+//     font-size: 18px;
+//     border: 4px solid #30405f ;
+//     outline:solid #08cb7b 2px;
+//     border-radius: 999px;
+//     line-height: 25px;
+//     padding: 0px 6px;
 
-}
+// }
+
 
 .gap-10 {
     gap: 10px;
+}
+
+.gap-35 {
+    gap: 35px
 }
 </style>
