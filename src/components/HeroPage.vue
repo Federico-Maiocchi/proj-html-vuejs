@@ -31,13 +31,16 @@ export default {
 
 <template>
     <div class="hero">
-        <div class="container-medium">
+        <div class="container-large">
             <div class="row">
-                <div class="col-5">
+                <div class="col-6">
                     <div>
                         <h3 class="sub-title">Game with live streaming</h3>
                         <h1 class="title">Future of esports</h1>
                         <p class="par-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias pariatur hic vel?</p>
+                    </div>
+                    <div>
+                        
                     </div>
                     <div class="row-card">
                         <button class="btn">Explore games <font-awesome-icon icon="fa-solid fa-angles-right" /></button>
@@ -47,7 +50,7 @@ export default {
                 <div class="image-bg">
                     <img src="/img/game-controler-2.png" alt="">
                 </div>
-                <div class="col-7">
+                <div class="col-6">
                     <img class="img-hero" src="/img/index-banner-illus.png" alt="">
                 </div>
             </div>    
@@ -62,7 +65,15 @@ export default {
     color: white;
     position: relative;
 
-    .col-5 {
+    .container-large {
+        margin: 0 auto;
+    }
+
+    .row {
+        justify-content: flex-end;
+    }
+
+    .col-6 {
         align-self: center;
         justify-self: flex-end;
         position: relative;
@@ -72,12 +83,14 @@ export default {
             font-size: 22px;
             margin-bottom: 20px;
             color:#94cb53;
+            text-transform: capitalize;
         }
 
         .title {
             font-size: 60px;
             line-height: 1em;
             margin-bottom: 20px;
+            text-transform: capitalize;
         }
 
         .par-card {
@@ -122,7 +135,7 @@ export default {
         left: 20px;
 
         img {
-            width: 350px;
+            width: 300px;
         }
     }
 

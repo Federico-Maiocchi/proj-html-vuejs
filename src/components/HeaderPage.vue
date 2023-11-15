@@ -96,7 +96,7 @@ export default {
 
 .header-page {
     color: $color-light;
-    padding: 20px 0;
+    padding-top: 20px;
 
     .row{
         justify-content: space-between;
