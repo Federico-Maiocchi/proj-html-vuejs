@@ -1,6 +1,21 @@
-.container {
-    max-width: 1000px;
+.container-large {
+    max-width: 1030px;
+    // margin: 0 auto;
+}
+
+.container-medium {
+    max-width: 830px;
     margin: 0 auto;
+}
+
+.container-small {
+    max-width: 710px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .row {
