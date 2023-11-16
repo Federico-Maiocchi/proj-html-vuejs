@@ -112,7 +112,31 @@ export default {
                 name: 'Jane Smith',
                 country:'America',
             }
-        ]
+        ],
+
+        cardNews: [
+            {
+                img:'public/img/blog-item-2.png',
+                time:'10 min',
+                visual:'240',
+                date:'Ago 05.2023',
+                title:'top 5 most important aspects of your game',
+            },
+            {
+                img:'public/img/blog-item-3.png',
+                time:'30 min',
+                visual:'1240',
+                date:'Feb 12.2023',
+                title:'the rise of fantasy sports and online games',
+            },
+            {
+                img:'public/img/blog-item-4.png',
+                time:'12 min',
+                visual:'10',
+                date:'Ago 05.2023',
+                title:'benefits of gaming - pc and video games',
+            }
+        ],
 
         }
     },
@@ -141,7 +165,7 @@ export default {
         <MainStream />
         <MainFeedback :itemFeedback="feedback" />
         <MainBanner />
-        <MainNews />
+        <MainNews :itemNews="cardNews" />
          
 
 
