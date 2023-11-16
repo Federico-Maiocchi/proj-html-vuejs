@@ -39,7 +39,7 @@ export default {
                 <div class="col-6">
                     <div class="header-services">
                         <h3 class="sub-title">The ultimate competitive gaming platform</h3>
-                        <h1 class="title">Make your mark on the battle field</h1>
+                        <h1 class="title">Make your mark on <br> the battle field</h1>
                         <p class="par-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam debitis ratione omnis corporis veritatis perspiciatis molestias accusantium facere, sint magni.</p>
                     </div>
                     <ul class="list-services">
@@ -89,7 +89,7 @@ export default {
 
         .title {
             font-size: 40px;
-            line-height: 1em;
+            line-height: 55px;
             margin-bottom: 20px;
             text-transform: capitalize;
         }

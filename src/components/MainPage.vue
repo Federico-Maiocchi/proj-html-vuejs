@@ -1,11 +1,15 @@
 <script >
 // import { ref } from 'vue'
 import MainServices from './MainServices.vue'
+import MainBattle from './MainBattle.vue'
+
 
 export default {
     components: {
-        MainServices,
-    },
+    MainServices,
+    MainBattle,
+    
+},
 
     data() {
     return {
@@ -26,6 +30,33 @@ export default {
                 description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum, sapiente labore recusandae voluptate tenetur.',
             }
         ],
+
+        battleMatch: [
+            {
+                squad1: '/img/game-img-1.png',
+                squad2: '/img/game-img-2.png',
+                tournament:'call of duty',
+                date:'Decmber 25.2022 4:00 PM',
+            },
+            {
+                squad1: '/img/game-img-3.png',
+                squad2: '/img/game-img-4.png',
+                tournament:'Legendary battle',
+                date:'Decmber 25.2022 4:00 PM',
+            },
+            {
+                squad1: '/img/game-img-5.png',
+                squad2: '/img/game-img-6.png',
+                tournament:'call of duty',
+                date:'Decmber 25.2022 4:00 PM',
+            },
+            {
+                squad1: '/img/game-img-7.png',
+                squad2: '/img/game-img-8.png',
+                tournament:'Nay corral gundown',
+                date:'Decmber 25.2022 4:00 PM',
+            },
+        ]
 
         }
     },
@@ -49,7 +80,7 @@ export default {
 <template>
     <div class="main-page">
         <MainServices :service="services"/>
-        
+        <MainBattle :itemBattle="battleMatch"/>
 
     </div>
     
