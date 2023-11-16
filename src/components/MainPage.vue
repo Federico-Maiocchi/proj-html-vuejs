@@ -5,6 +5,8 @@ import MainBattle from './MainBattle.vue'
 import MainData from './MainData.vue'
 import MainStream from './MainStream.vue'
 import MainFeedback from './MainFeedback.vue'
+import MainBanner from './MainBanner.vue'
+
 
 export default {
     components: {
@@ -12,7 +14,8 @@ export default {
     MainBattle,
     MainData,
     MainStream,
-    MainFeedback
+    MainFeedback,
+    MainBanner,
 },
 
     data() {
@@ -135,6 +138,8 @@ export default {
         <MainData :itemData="data" />
         <MainStream />
         <MainFeedback :itemFeedback="feedback" />
+        <MainBanner /> 
+
 
     </div>
     

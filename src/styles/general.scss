@@ -1,6 +1,6 @@
 .container-large {
     max-width: 1100px;
-    // margin: 0 auto;
+    margin: 0 auto;
 }
 
 .container-medium {
@@ -31,7 +31,9 @@ body {
     flex-wrap: wrap;
 }
 
-
+.col-12 {
+    flex-basis: 100%;
+}
 .col-8 {
     flex-basis: calc((100% / 12) * 8);
 }
