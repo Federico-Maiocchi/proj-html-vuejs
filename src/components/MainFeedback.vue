@@ -3,7 +3,7 @@
 
 export default {
     props: {
-        
+        itemFeedback: Object
     },
 
     data() {
@@ -40,76 +40,19 @@ export default {
         </div>
         <div class="container-medium ">
             <div class="row">
-                <div class="col-4">
+                <div v-for="item in itemFeedback" class="col-4">
                     <div class="card">
-                        <div class="icon-star"><font-awesome-icon icon="fa-solid fa-star" /></div>
-                        <p class="p-quote">"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
+                        <span v-for="star in item.vote" class="icon-star"><font-awesome-icon icon="fa-solid fa-star" /></span>
+                        <p class="p-quote">{{ item.comment }}</p>
                         <div>
                             <ul class="user-profile">
                                 <li  class="row no-wrap">
                                     <div>
-                                        <img class="user-photo" src="/img/testimonials-image-3.png" alt="">
+                                        <img class="user-photo" :src="item.img" alt="">
                                     </div>
                                     <div class="profile">
-                                        <h4 class="user">Kim Ramos</h4>
-                                        <p class="from">Serbia</p>
-                                    </div>   
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="icon-star"><font-awesome-icon icon="fa-solid fa-star" /></div>
-                        <p class="p-quote">"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
-                        <div>
-                            <ul class="user-profile">
-                                <li  class="row no-wrap">
-                                    <div>
-                                        <img class="user-photo" src="/img/testimonials-image-3.png" alt="">
-                                    </div>
-                                    <div class="profile">
-                                        <h4 class="user">Kim Ramos</h4>
-                                        <p class="from">Serbia</p>
-                                    </div>   
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="icon-star"><font-awesome-icon icon="fa-solid fa-star" /></div>
-                        <p class="p-quote">"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
-                        <div>
-                            <ul class="user-profile">
-                                <li  class="row no-wrap">
-                                    <div>
-                                        <img class="user-photo" src="/img/testimonials-image-3.png" alt="">
-                                    </div>
-                                    <div class="profile">
-                                        <h4 class="user">Kim Ramos</h4>
-                                        <p class="from">Serbia</p>
-                                    </div>   
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="icon-star"><font-awesome-icon icon="fa-solid fa-star" /></div>
-                        <p class="p-quote">"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
-                        <div>
-                            <ul class="user-profile">
-                                <li  class="row no-wrap">
-                                    <div>
-                                        <img class="user-photo" src="/img/testimonials-image-3.png" alt="">
-                                    </div>
-                                    <div class="profile">
-                                        <h4 class="user">Kim Ramos</h4>
-                                        <p class="from">Serbia</p>
+                                        <h4 class="user">{{ item.name }}</h4>
+                                        <p class="from">{{ item.country }}</p>
                                     </div>   
                                 </li>
                             </ul>
@@ -139,11 +82,11 @@ export default {
 
 .icon-star {
     color: yellow;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .p-quote {
-    padding-bottom: 14px;
+    padding: 20px 0;
     font-weight: 300;
 }
 

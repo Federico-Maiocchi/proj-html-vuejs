@@ -85,7 +85,29 @@ export default {
             }
         ],
 
-
+        feedback: [
+            {
+                vote: 5,
+                comment: '"Lorem ipsum dolor sit amet consectetur, adipisicing elit."',
+                img: '/img/testimonials-image-3.png',
+                name: 'Kim Ramos',
+                country:'Serbia',
+            },
+            {
+                vote: 3,
+                comment: '"Lorem ipsum dolor sit amet consectetur, adipisicing elit."',
+                img: '/img/testimonials-image-2.png',
+                name: 'Gino Pagino',
+                country:'Italia',
+            },
+            {
+                vote: 4,
+                comment: '"Lorem ipsum dolor sit amet consectetur, adipisicing elit."',
+                img: '/img/user-image-2.png',
+                name: 'Jane Smith',
+                country:'America',
+            }
+        ]
 
         }
     },
@@ -112,7 +134,7 @@ export default {
         <MainBattle :itemBattle="battleMatch"/>
         <MainData :itemData="data" />
         <MainStream />
-        <MainFeedback />
+        <MainFeedback :itemFeedback="feedback" />
 
     </div>
     
