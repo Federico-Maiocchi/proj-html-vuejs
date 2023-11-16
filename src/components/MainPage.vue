@@ -2,13 +2,15 @@
 // import { ref } from 'vue'
 import MainServices from './MainServices.vue'
 import MainBattle from './MainBattle.vue'
-
+import MainData from './MainData.vue'
+import MainBody from './MainBody.vue'
 
 export default {
     components: {
     MainServices,
     MainBattle,
-    
+    MainData,
+    MainBody
 },
 
     data() {
@@ -56,7 +58,32 @@ export default {
                 tournament:'Nay corral gundown',
                 date:'Decmber 25.2022 4:00 PM',
             },
-        ]
+        ],
+
+        data: [
+            {
+                numData: 1135,
+                titleData: 'Twitch streams',
+                
+            },
+            {
+                numData: 44,
+                titleData: 'Total games',
+                
+            },
+            {
+                numData: 982,
+                titleData: 'Youtube streams',
+                
+            },
+            {
+                numData: 40,
+                titleData: 'Pro team',
+                
+            }
+        ],
+
+
 
         }
     },
@@ -81,6 +108,8 @@ export default {
     <div class="main-page">
         <MainServices :service="services"/>
         <MainBattle :itemBattle="battleMatch"/>
+        <MainData :itemData="data" />
+        <MainBody />
 
     </div>
     

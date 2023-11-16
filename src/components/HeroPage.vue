@@ -122,7 +122,6 @@ export default {
 
         .col-6 {
             height: 100%;
-            flex-grow: 1;
         }
     }
 

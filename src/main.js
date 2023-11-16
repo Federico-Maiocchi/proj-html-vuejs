@@ -18,7 +18,9 @@ import {
     faCartShopping,
     faAnglesRight,
     faCirclePlay,
-    faPlay
+    faPlay,
+    faWifi,
+    faStar
     
  } from '@fortawesome/free-solid-svg-icons'
 
@@ -31,7 +33,9 @@ import {
     faCartShopping,
     faAnglesRight,
     faCirclePlay,
-    faPlay
+    faPlay,
+    faWifi,
+    faStar,
 )
 
 createApp(App)
