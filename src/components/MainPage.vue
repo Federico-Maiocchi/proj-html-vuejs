@@ -3,14 +3,16 @@
 import MainServices from './MainServices.vue'
 import MainBattle from './MainBattle.vue'
 import MainData from './MainData.vue'
-import MainBody from './MainBody.vue'
+import MainStream from './MainStream.vue'
+import MainFeedback from './MainFeedback.vue'
 
 export default {
     components: {
     MainServices,
     MainBattle,
     MainData,
-    MainBody
+    MainStream,
+    MainFeedback
 },
 
     data() {
@@ -109,7 +111,8 @@ export default {
         <MainServices :service="services"/>
         <MainBattle :itemBattle="battleMatch"/>
         <MainData :itemData="data" />
-        <MainBody />
+        <MainStream />
+        <MainFeedback />
 
     </div>
     

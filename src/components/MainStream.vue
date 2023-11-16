@@ -56,49 +56,6 @@ export default {
 @use '../styles/partials/variables' as *;
 
 
-.info-stream {
-    position: absolute;
-    bottom: 50px;
-    left:20px;
-    gap: 15px;
-}
-.color-light-green {
-    color: #94cb53;
-}
-.card-figure {
-    position: relative;
-} 
-
-.icon {
-    font-size: 35px;
-    line-height: 60px;
-    color: #94cb53;
-    background-color: white;
-    padding: 0 18px;
-    border-radius: 999px;
-    border: 18px solid #30405f;
-    outline: solid #94cb53 2px;
-    position: absolute;
-    
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-30%, -0%);
-}
-
-.badge {
-    display: inline-block;
-    background-color: orange;
-    padding: 0px 20px;
-    line-height: 25px;
-    font-size: 18px;
-    color: black;
-    // font-weight: 600;
-    border-radius: 999px;
-    position: absolute;
-    right:50px;
-    top: 15px;
-}
-
 .main-body {
     background-image: url(/img/live-streaming-bg.png);
     background-size:contain;
@@ -143,4 +100,47 @@ export default {
     }
 }
 
+
+.info-stream {
+    position: absolute;
+    bottom: 50px;
+    left:20px;
+    gap: 15px;
+}
+.color-light-green {
+    color: #94cb53;
+}
+.card-figure {
+    position: relative;
+} 
+
+.icon {
+    font-size: 35px;
+    line-height: 60px;
+    color: #94cb53;
+    background-color: white;
+    padding: 0 18px;
+    border-radius: 999px;
+    border: 18px solid #30405f;
+    outline: solid #94cb53 2px;
+    position: absolute;
+    
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-30%, -0%);
+}
+
+.badge {
+    display: inline-block;
+    background-color: orange;
+    padding: 0px 20px;
+    line-height: 25px;
+    font-size: 18px;
+    color: black;
+    // font-weight: 600;
+    border-radius: 999px;
+    position: absolute;
+    right:50px;
+    top: 15px;
+}
 </style>
