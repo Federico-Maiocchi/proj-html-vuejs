@@ -20,9 +20,17 @@ import {
     faCirclePlay,
     faPlay,
     faWifi,
-    faStar
-    
+    faStar,
+ 
  } from '@fortawesome/free-solid-svg-icons'
+
+
+ import {
+    faClock,
+    faEye,
+    faCalendar,
+} from '@fortawesome/free-regular-svg-icons'
+
 
  library.add(
     faUser,
@@ -36,6 +44,10 @@ import {
     faPlay,
     faWifi,
     faStar,
+    faClock,
+    faEye,
+    faCalendar,
+
 )
 
 createApp(App)

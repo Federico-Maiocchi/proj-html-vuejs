@@ -124,7 +124,6 @@ export default {
     border: 18px solid #30405f;
     outline: solid #94cb53 2px;
     position: absolute;
-    
     left: 50%;
     bottom: 50%;
     transform: translate(-30%, -0%);
