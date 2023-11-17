@@ -13,8 +13,8 @@ export default {
     HeroPage,
     MainPage,
     FooterPage,
-    // Subscribe
-},
+
+    },
 
     data() {
     return {

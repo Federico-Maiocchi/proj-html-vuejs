@@ -31,7 +31,7 @@ export default {
         </div>
         <div class="container-medium">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 pad-10">
                     <div class="card">
                         <figure class="card-header">
                             <img src="/img/blog-item-1.png" alt="">
@@ -73,8 +73,19 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+
+
+.pad-10 {
+    padding: 10px 10px 20px 10px;
+}
+
+img { 
+    display: block;
+}
 .col-4 {
     padding: 10px;
+
+    
 }
 
 .p-right-small {

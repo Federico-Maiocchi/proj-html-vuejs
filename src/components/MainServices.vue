@@ -31,9 +31,9 @@ export default {
 
 <template>
     <div class="services">
-        <div class="container-large">
-            <div class="row">
-                <div class="col-6">
+        <div class="container-medium">
+            <div class="row justify-end">
+                <div class="img-absolut">
                     <img class="img-hero" src="/img/features-illus.png" alt="">
                 </div>
                 <div class="col-6">
@@ -53,7 +53,7 @@ export default {
                             </div>   
                         </li>
                     </ul>
-                    <button class="btn">Play now <font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    <span class="border-out"><button class="btn">Play now <font-awesome-icon icon="fa-solid fa-angles-right" /></button></span>
                 </div>
             </div>    
         </div>
@@ -63,6 +63,15 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+.justify-end {
+    justify-content: flex-end;
+}
+
+.img-absolut {
+    position: absolute;
+    left:-25px;
+    top:150px;
+}
 
 .services {
     background-color: black;
@@ -73,7 +82,7 @@ export default {
     .img-hero {
         object-fit: contain;
         margin-right: 30px;
-        width: 520px;
+        width: 650px;
     }   
 
     .col-6 {
@@ -111,12 +120,7 @@ export default {
             outline:solid #94cb53 2px;
         }
 
-        
-        
-
     }
-
-    
 
 }
 

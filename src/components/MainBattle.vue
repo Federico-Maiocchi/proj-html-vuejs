@@ -30,12 +30,14 @@ export default {
 
 <template>
     <div class="battle">
-        <div class="container-medium">
+        <div class="container-xs">
             <div class="text-center">
                 <h3 class="sub-title">Trending battle</h3>
                 <h1 class="title">Keep eyes & manage <br> upcoming battle</h1>
-                <p class="par-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde alias laboriosam iure fuga odit quo quasi autem officiis inventore!</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde alias laboriosam iure fuga odit quo quasi autem officiis inventore!</p>
             </div>
+        </div>
+        <div class="container-medium">
             <div class="row">
                 <div v-for="battle in itemBattle" class="col-6">
                     <div class="card-battle">
@@ -49,17 +51,17 @@ export default {
                             <p class="date-bat">{{ battle.date }}</p>
                         </div>
                         <div class="social row">
-                            <span class="row"><img src="/img/youtube-icon.png" alt="">Youtube</span>
-                            <span class="row"><img src="/img/twitch-icon.png" alt="">twitch</span>
+                            <span class="row align-center"><img src="/img/youtube-icon.png" alt="">Youtube</span>
+                            <span class="row align-center"><img src="/img/twitch-icon.png" alt="">twitch</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="button">
                 <div class="row justify-center">
-                    <button class="btn">View all match <font-awesome-icon icon="fa-solid fa-angles-right" /></button>
+                    <span class="border-out"><button class="btn">View all match <font-awesome-icon icon="fa-solid fa-angles-right" /></button></span>
                 </div>
-            </div>  
+            </div> 
         </div>
     </div>
 </template>
@@ -67,30 +69,6 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-.button {
-    padding-top: 35px;
-}
-.justify-center {
-    justify-content: center;
-}
-.col-6 {
-    padding: 10px;
-}
-.tournament {
-    text-align: center;
-    background-color: #30415f ;
-    
-    padding: 20px 0;
-    .title-bat{
-        color: white;
-        font-size: 25px;
-        padding-bottom: 10px;
-    }
-
-    .date-bat {
-        color: #94cb53;
-    }
-}
 .battle {
     color: white;
     background-color: #212733 ;
@@ -100,26 +78,26 @@ export default {
         text-align: center;
     }
     .sub-title {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color:#94cb53;
-            text-transform: capitalize;
-            
-        }
+        font-size: 20px;
+        margin-bottom: 20px;
+        color:#94cb53;
+        text-transform: capitalize;
+        
+    }
 
-        .title {
-            font-size: 40px;
-            line-height: 55px;
-            margin-bottom: 20px;
-            text-transform: capitalize;
-        }
+    .title {
+        font-size: 40px;
+        line-height: 55px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
 
-        .par-card {
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: grey;
-            
-        }    
+    .paragraph {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: grey;
+        
+    }    
 }
 
 
@@ -127,7 +105,6 @@ export default {
     background-color: white;
     border: 2px solid #30415f;
     border-radius: 24px;
-    // padding: 20px;
 
     .header-card-battle {
         padding: 20px;
@@ -145,6 +122,38 @@ export default {
         color: #94cb53;
     }
 }
+
+
+
+.button {
+    padding-top: 35px;
+}
+
+
+.col-6 {
+    padding: 10px;
+}
+.tournament {
+    text-align: center;
+    background-color: #30415f ;
+    
+    
+    padding: 20px 0;
+    .title-bat{
+        color: white;
+        font-size: 25px;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    .date-bat {
+        color: #94cb53;
+    }
+}
+
+
+
+
 
 .row-card {
     display: flex;

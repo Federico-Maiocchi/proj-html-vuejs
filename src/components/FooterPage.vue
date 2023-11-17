@@ -130,9 +130,9 @@ export default {
         <div class="container-medium">
             <div class="row gap-12">
                 <FooterMenuSocial :itemSocial="socialFooter"/>
-                <FooterMenu class="col" :title="menuFooter1.title" :links="menuFooter1.links"/>
-                <FooterMenu class="col" :title="menuFooter2.title" :links="menuFooter2.links"/>
-                <FooterMenu class="col" :title="menuFooter3.title" :links="menuFooter3.links"/>
+                <FooterMenu class="col-2" :title="menuFooter1.title" :links="menuFooter1.links"/>
+                <FooterMenu class="col-2" :title="menuFooter2.title" :links="menuFooter2.links"/>
+                <FooterMenu class="col-2" :title="menuFooter3.title" :links="menuFooter3.links"/>
                 <div class="col-2">
                     <ul>
                         <h4 class="title-list-contact">Contact</h4>
@@ -156,6 +156,11 @@ export default {
 @use '../styles/partials/variables' as *;
 
 
+
+*[class^='col'] {
+    padding-right: 20px;
+}
+
 .footer-page {
     padding: 200px 0 80px 0;
     background-color: #28344a;
@@ -163,15 +168,11 @@ export default {
     position: relative;
 
     .title-list-contact {
-        font-size: 25px;
+        font-size: 20px;
         color: white;
         text-transform: capitalize;
         font-weight: 100;
         padding-bottom: 20px;
-    }
-
-    .gap-12 {
-        gap: 12px;
     }
 
 

@@ -43,7 +43,7 @@ export default {
 
 
 .title-list-contact {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     text-transform: capitalize;
     font-weight: 100;
@@ -55,5 +55,9 @@ li {
     text-transform: capitalize;
     font-size: 14px;
     padding-bottom: 15px;
+}
+
+li:hover {
+    color: #94cb53;
 }
 </style>

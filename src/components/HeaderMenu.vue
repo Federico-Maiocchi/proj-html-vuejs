@@ -44,6 +44,12 @@ export default {
 
 .menu-item {
     position: relative;
+    z-index: 5;
+}
+
+
+.menu-left-header {
+    z-index:5;
 }
 .menu-item:hover .arrow-bottom + .d-block {
     display: block;

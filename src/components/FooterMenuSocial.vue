@@ -49,7 +49,7 @@ export default {
 .row-social {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 10px;
 }
 .p-footer {
     font-size: 12px;
@@ -66,10 +66,19 @@ export default {
     padding: 10px;
 }
 
+.icon-social:hover {
+    border: 1px solid #94cb53;
+    color: white;
+    background-color: #94cb53;
+}
+
+
 .logo {
     padding-bottom: 40px;
 }
 .paragraph-footer {
     padding-bottom: 40px;
 }
+
+
 </style>
