@@ -31,6 +31,13 @@ import {
     faCalendar,
 } from '@fortawesome/free-regular-svg-icons'
 
+import {
+    faFacebook,
+    faInstagram,
+    faTwitch,
+    faYoutube,
+} from '@fortawesome/free-brands-svg-icons'
+
 
  library.add(
     faUser,
@@ -47,7 +54,11 @@ import {
     faClock,
     faEye,
     faCalendar,
-
+    faFacebook,
+    faInstagram,
+    faTwitch,
+    faYoutube,
+    
 )
 
 createApp(App)

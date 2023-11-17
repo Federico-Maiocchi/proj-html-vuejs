@@ -1,4 +1,5 @@
 <script>
+import FooterPage from './components/FooterPage.vue';
 import HeaderPage from './components/HeaderPage.vue';
 import HeroPage from './components/HeroPage.vue';
 import MainPage from './components/MainPage.vue';
@@ -7,11 +8,11 @@ import MainPage from './components/MainPage.vue';
 
 export default {
     components: {
-      HeaderPage,
-      HeroPage,
-      MainPage
-    
-    },
+    HeaderPage,
+    HeroPage,
+    MainPage,
+    FooterPage
+},
 
     data() {
     return {
@@ -33,9 +34,9 @@ export default {
     <HeaderPage />
     <HeroPage />
   </div>
-  <div>
-    <MainPage />
-  </div>
+  <MainPage />
+  <FooterPage />
+  
   
 </template>
 

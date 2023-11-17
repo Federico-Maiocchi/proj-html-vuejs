@@ -110,7 +110,6 @@ export default {
 .row-card-small {
     display: flex;
     flex-direction: column;
-    
 }
 .card-small {
     background-color: #30415f;
@@ -142,7 +141,7 @@ export default {
 
 
 .news {
-    padding: 80px 0;
+    padding: 80px 0 200px 0;
     color: white;
     background-color: black;
 
