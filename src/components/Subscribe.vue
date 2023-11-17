@@ -55,7 +55,6 @@ export default {
     padding: 30px;
     background-color: #30415F;
     width: 700px;
-    // height: 200px;
     position: absolute;
     color: white;
     border-radius: 30px;
