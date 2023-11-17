@@ -51,28 +51,6 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-.input-custom {
-    background-color: #435374 ;
-    padding: 5px;
-    border-radius: 20px;
-}
-.mail {
-    padding: 8px;
-    border-radius: 10px;
-    color: white;
-    background-color: #435374;
-    border: none;
-}
-
-.icon {
-    background-color: yellowgreen;
-    padding: 5px;
-    font-size: 20px;
-    border-radius: 50%;
-
-
-}
-
 .subscribe {
     padding: 30px;
     background-color: #30415F;
@@ -82,24 +60,24 @@ export default {
     color: white;
     border-radius: 30px;
     top: 850px;
-    right: 350px;
+    right: 24%;
     z-index: 5;
 
     .container-custom {
         max-width: 100%;
 
-        .row {
-            display: flex;
-
-        }
         p {
             font-size: 12px;
             line-height: 2em;
+            padding-bottom: 20px;
         }
 
         h3 {
+            font-weight: 300;
             font-size: 30px;
             text-transform: capitalize;
+            padding-bottom: 20px;
+
         }
 
         .col-5 {
@@ -110,5 +88,45 @@ export default {
         }
     }
 }
+
+.input-custom {
+    background-color: #435374 ;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.mail {
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    background-color: #435374;
+    border: none;
+
+    
+}
+
+::placeholder {
+        color: lightgray;
+}
+
+input:focus {
+    outline:none
+}
+
+input {
+
+    border:0;
+    outline:0;
+}
+.icon {
+    background-color: yellowgreen;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+
+
+}
+
+
 
 </style>
