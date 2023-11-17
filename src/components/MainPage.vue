@@ -166,9 +166,6 @@ export default {
         <MainFeedback :itemFeedback="feedback" />
         <MainBanner />
         <MainNews :itemNews="cardNews" />
-         
-
-
     </div>
     
   

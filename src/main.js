@@ -21,6 +21,7 @@ import {
     faPlay,
     faWifi,
     faStar,
+    faPaperPlane,
  
  } from '@fortawesome/free-solid-svg-icons'
 
@@ -29,6 +30,7 @@ import {
     faClock,
     faEye,
     faCalendar,
+    faCopyright
 } from '@fortawesome/free-regular-svg-icons'
 
 import {
@@ -58,6 +60,8 @@ import {
     faInstagram,
     faTwitch,
     faYoutube,
+    faCopyright,
+    faPaperPlane
     
 )
 

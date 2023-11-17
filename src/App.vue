@@ -3,6 +3,7 @@ import FooterPage from './components/FooterPage.vue';
 import HeaderPage from './components/HeaderPage.vue';
 import HeroPage from './components/HeroPage.vue';
 import MainPage from './components/MainPage.vue';
+// import Subscribe from './components/Subscribe.vue';
 
 
 
@@ -11,7 +12,8 @@ export default {
     HeaderPage,
     HeroPage,
     MainPage,
-    FooterPage
+    FooterPage,
+    // Subscribe
 },
 
     data() {
@@ -35,6 +37,7 @@ export default {
     <HeroPage />
   </div>
   <MainPage />
+  
   <FooterPage />
   
   

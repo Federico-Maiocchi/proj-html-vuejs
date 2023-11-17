@@ -1,35 +1,27 @@
 <script >
+import Subscribe from './Subscribe.vue';
+
 
 export default {
     props: {
         itemNews: Object
     },
-
     data() {
-    return {
-
-        }
+        return {};
     },
-
     created() {
-       
     },
-
-    methods: {
-        
-    },
-
+    methods: {},
     mounted() {
-    
     },
-
-
+    components: { Subscribe }
 }
 
 </script>
 
 <template>
     <div class="news">
+        <Subscribe />
         <div class="container-xs">
             <div class="text-center">
                 <h3 class="sub-title">Latest news</h3>
@@ -144,6 +136,7 @@ export default {
     padding: 80px 0 200px 0;
     color: white;
     background-color: black;
+    position: relative;
 
     .text-center {
         text-align: center;
