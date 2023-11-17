@@ -57,18 +57,5 @@ li:hover {
     color: #94cb53;
 }
 
-.btn {
-    background-color: #08cb7b ;
-    color: #30405f;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    border: 4px solid #30405f ;
-    outline:solid #08cb7b 2px;
-    border-radius: 999px;
-    line-height: 30px;
-    padding: 0px 10px;
-    cursor: pointer;
-}
 
 </style>
