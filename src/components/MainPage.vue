@@ -111,7 +111,16 @@ export default {
                 img: '/img/user-image-2.png',
                 name: 'Jane Smith',
                 country:'America',
-            }
+            },
+            {
+                vote: 4,
+                comment: '"Lorem ipsum dolor sit amet consectetur, adipisicing elit."',
+                img: '/img/user-image-2.png',
+                name: 'Jane Smith',
+                country:'America',
+            },
+
+
         ],
 
         cardNews: [

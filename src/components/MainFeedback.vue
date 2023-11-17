@@ -35,12 +35,12 @@ export default {
             <div class="text-center">
                 <h3 class="sub-title">Futio feedback</h3>
                 <h1 class="title">What our gamers say</h1>
-                <p class="par-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde alias laboriosam iure fuga odit quo quasi autem officiis inventore!</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde alias laboriosam iure fuga odit quo quasi autem officiis inventore!</p>
             </div>
         </div>
-        <div class="container-medium ">
+        <div class="container-large">
             <div class="row">
-                <div v-for="item in itemFeedback" class="col-4">
+                <div v-for="item in itemFeedback" class="col-3">
                     <div class="card">
                         <span v-for="star in item.vote" class="icon-star"><font-awesome-icon icon="fa-solid fa-star" /></span>
                         <p class="p-quote">{{ item.comment }}</p>
@@ -57,6 +57,12 @@ export default {
                         </div>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="row justify-between">
+                        <div class="block-1">block-left</div>
+                        <div class="block-2">block-right</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -65,14 +71,47 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-.container-medium {
-    min-height: 100px;
-    overflow-x: hidden;
-}
-.col-4 {
-    padding: 5px;
+
+.main-body {
+    background-color: black;
+    color: white;
+    padding: 70px 0px;
+
+    .container-xs {
+        margin-bottom: 120px;
+        
+    }
+    .text-center{
+        text-align: center;
+    }
+    .sub-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color:#94cb53;
+        text-transform: capitalize;
+        
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 55px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: grey;
+        
+    }  
     
 }
+
+.col-3 {
+    padding: 5px;
+}
+
 
 .user-profile {
     padding-left: 20px;
@@ -101,44 +140,37 @@ export default {
     background-color: #30415f;
     padding: 10px;
     border-radius: 20px;
-
 }
 
-
-.main-body {
+.justify-between {
+    justify-content: space-between;
+}
+.block-1 {
+    width: 180px;
     background-color: black;
-    color: white;
-    padding: 70px 0px;
+    color: black;
+    height: 220px;
+}
 
-    .container-xs {
-        margin-bottom: 50px;
-        
-    }
-    .text-center{
-        text-align: center;
-    }
-    .sub-title {
-        font-size: 20px;
-        margin-bottom: 20px;
-        color:#94cb53;
-        text-transform: capitalize;
-        
-    }
-
-    .title {
-        font-size: 40px;
-        line-height: 55px;
-        margin-bottom: 20px;
-        text-transform: capitalize;
-    }
-
-    .par-card {
-        font-size: 16px;
-        margin-bottom: 20px;
-        color: grey;
-        
-    }  
+.block-2 {
+    width: 180px;
+    background-color: black;
+    color: black;
     
+}
+
+.container {
+    background-color: transparent;
+    // padding: 80px;
+    width: 100%;
+    height: 220px;
+    
+    z-index: 1;
+    position: absolute;
+}
+
+.container-large {
+    position: relative;
 }
 
 </style>
