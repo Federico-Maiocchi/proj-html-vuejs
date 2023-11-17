@@ -32,7 +32,10 @@ export default {
     </div>
     <div class="menu-left-header">
         <ul class="row">
-            <li><a href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a></li>
+            <li class="position-relative">
+                <a href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a>
+                <div class="notification">03</div>
+            </li>
             <span class="border-out"><button class="btn">Live streaming</button></span>
         </ul>
     </div>
@@ -46,7 +49,6 @@ export default {
     position: relative;
     z-index: 5;
 }
-
 
 .menu-left-header {
     z-index:5;
@@ -62,6 +64,21 @@ export default {
 li:hover {
     color: #94cb53;
 }
-
+.position-relative {
+    position: relative;
+}
+.notification {
+    position: absolute;
+    background-color: #08cb7b;
+    color: black;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: middle;
+    padding: 2px;
+    top:-12px;
+    right:-6px;
+}
 
 </style>

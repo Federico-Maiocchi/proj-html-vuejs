@@ -63,6 +63,8 @@ export default {
 
     .col-12 {
         height: 100%;
+        z-index: 1;
+        position: relative;
     }
     .row-banner {
         display: flex;
@@ -110,9 +112,13 @@ export default {
     color: white;
     border-radius: 999px;
     opacity: 0.5;
+    cursor: pointer;
     
 }
 
+.badge:hover {
+    opacity: 1.0;
+}
 .sub-title {
         font-size: 20px;
         margin-bottom: 20px;
