@@ -2,8 +2,6 @@
 import FooterMenu from './FooterMenu.vue';
 import FooterMenuSocial from './FooterMenuSocial.vue';
 
-
-
 export default {
     components: {
     FooterMenuSocial,
@@ -121,7 +119,6 @@ export default {
     },
 
 }
-
 </script>
 
 <template>
@@ -190,7 +187,6 @@ export default {
     }
 
 }
-
 
 
 .footer-page-end {

@@ -34,14 +34,14 @@ export default {
             <div class="text-center">
                 <h3 class="sub-title">Live streaming</h3>
                 <h1 class="title">Watch the streams</h1>
-                <p class="par-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde alias laboriosam iure fuga odit quo quasi autem officiis inventore!</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde alias laboriosam iure fuga odit quo quasi autem officiis inventore!</p>
             </div>
         </div>
         <div class="container-medium text-center">
             <figure class="card-figure">
-                <img class="img-stream" src="/img/stream-bg-3.png" alt="">
+                <img class="img-stream" src="/img/video-bg.png" alt="">
                 <div class="badge"><font-awesome-icon class="icon-bandge" icon="fa-solid fa-wifi" />  Live</div>
-                <span class="icon"><font-awesome-icon icon="fa-solid fa-play" /></span>
+                <span class="border-out"><span class="icon"><font-awesome-icon icon="fa-solid fa-play" /></span></span>
                 <div class="info-stream row">
                     <span><span class="color-light-green">356.599</span> Viewers</span>
                     <span><span class="color-light-green">23.599</span> Likes</span>
@@ -85,18 +85,12 @@ export default {
         text-transform: capitalize;
     }
 
-    .par-card {
+    .paragraph {
         font-size: 16px;
         margin-bottom: 20px;
-        color: grey;
-        
+        color: grey; 
     }  
     
-    .img-stream {
-        width: 100%;
-        aspect-ratio: 16/9 ;
-        filter: brightness(0.4);
-    }
 }
 
 
@@ -114,14 +108,28 @@ export default {
 } 
 
 .icon {
-    font-size: 35px;
-    line-height: 60px;
-    color: #94cb53;
+    
+    align-items: center;
+    color: #08cb7b;
     background-color: white;
-    padding: 0 18px;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 0 25px;
+    line-height: 60px;
+
+}
+
+.icon:hover {
+    color: white;
+    background-color: #94cb53;
+}
+
+.border-out {
+    padding: 15px;
+    border:1px solid #08cb7b;
     border-radius: 999px;
-    border: 18px solid #30405f;
-    outline: solid #94cb53 2px;
     position: absolute;
     left: 50%;
     bottom: 50%;
@@ -135,7 +143,6 @@ export default {
     line-height: 25px;
     font-size: 18px;
     color: black;
-    // font-weight: 600;
     border-radius: 999px;
     position: absolute;
     right:50px;

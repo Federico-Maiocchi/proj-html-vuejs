@@ -40,7 +40,7 @@ export default {
                     <div class="header-services">
                         <h3 class="sub-title">The ultimate competitive gaming platform</h3>
                         <h1 class="title">Make your mark on <br> the battle field</h1>
-                        <p class="par-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam debitis ratione omnis corporis veritatis perspiciatis molestias accusantium facere, sint magni.</p>
+                        <p class="paragraph ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam debitis ratione omnis corporis veritatis perspiciatis molestias accusantium facere, sint magni.</p>
                     </div>
                     <ul class="list-services">
                         <li v-for="item in service" class="row no-wrap">
@@ -63,15 +63,7 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-.justify-end {
-    justify-content: flex-end;
-}
 
-.img-absolut {
-    position: absolute;
-    left:-25px;
-    top:150px;
-}
 
 .services {
     background-color: black;
@@ -103,7 +95,7 @@ export default {
             text-transform: capitalize;
         }
 
-        .par-card {
+        .paragraph {
             font-size: 16px;
             margin-bottom: 20px;
             color: grey;
@@ -124,23 +116,18 @@ export default {
 
 }
 
-
-.description { 
-    padding-left: 15px;
-}
-.icon-img {
-    width: 120px;
-    padding-bottom: 10px;
-}
-.h-2 {
-    text-transform: uppercase;
-    padding-bottom: 15px ;
+.justify-end {
+    justify-content: flex-end;
 }
 
-.p-2 {
-    font-size: 14px;
-    color: gray;
+.img-absolut {
+    position: absolute;
+    left:-25px;
+    top:150px;
+    z-index: 0;
 }
+
+
 .no-wrap {
     flex-wrap: nowrap;
     padding-bottom: 20px;
@@ -150,6 +137,32 @@ export default {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
+
+.icon-img {
+    width: 120px;
+    padding-bottom: 10px;
+}
+
+.list-services {
+    padding-bottom: 25px;
+}
+.description { 
+    padding-left: 15px;
+
+    .h-2 {
+        text-transform: uppercase;
+        padding-bottom: 15px ;
+    }
+
+    .p-2 {
+        font-size: 14px;
+        color: gray;
+    }
+
+}
+
+
 
 
 

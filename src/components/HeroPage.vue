@@ -97,7 +97,6 @@ export default {
     background-color: white;
     display: inline-block;
     font-size: 24px;
-    
     border-radius: 50%;
     vertical-align: middle;
     padding: 0 12px;

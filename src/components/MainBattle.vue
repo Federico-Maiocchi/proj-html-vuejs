@@ -100,7 +100,9 @@ export default {
     }    
 }
 
-
+.col-6 {
+    padding: 10px;
+}
 .card-battle {
     background-color: white;
     border: 2px solid #30415f;
@@ -111,6 +113,14 @@ export default {
         background-color: #28344a ;
         border-radius: 20px 20px 0px 0px;
         
+    }
+
+    .row-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+                
     }
     .img-card {
         width: 100px;
@@ -124,15 +134,6 @@ export default {
 }
 
 
-
-.button {
-    padding-top: 35px;
-}
-
-
-.col-6 {
-    padding: 10px;
-}
 .tournament {
     text-align: center;
     background-color: #30415f ;
@@ -151,17 +152,10 @@ export default {
     }
 }
 
-
-
-
-
-.row-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-            
+.button {
+    padding-top: 35px;
 }
+
 
 .social {
     background-color: #28344a ;

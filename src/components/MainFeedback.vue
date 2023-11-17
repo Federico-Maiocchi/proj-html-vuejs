@@ -44,18 +44,16 @@ export default {
                     <div class="card">
                         <span v-for="star in item.vote" class="icon-star"><font-awesome-icon icon="fa-solid fa-star" /></span>
                         <p class="p-quote">{{ item.comment }}</p>
-                        <div>
-                            <ul class="user-profile">
-                                <li  class="row no-wrap">
-                                    <div>
-                                        <img class="user-photo" :src="item.img" alt="">
-                                    </div>
-                                    <div class="profile">
-                                        <h4 class="user">{{ item.name }}</h4>
-                                        <p class="from">{{ item.country }}</p>
-                                    </div>   
-                                </li>
-                            </ul>
+                        <div class="user-profile">
+                            <div class="row no-wrap">
+                                <div>
+                                    <img class="user-photo" :src="item.img" alt="">
+                                </div>
+                                <div class="profile">
+                                    <h4 class="user">{{ item.name }}</h4>
+                                    <p class="from">{{ item.country }}</p>
+                                </div>   
+                            </div>
                         </div>
                     </div>
                 </div>
