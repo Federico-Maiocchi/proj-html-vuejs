@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-    <div class="main-body">
+    <div class="feedback">
         <div class="container-xs">
             <div class="text-center">
                 <h3 class="sub-title">Futio feedback</h3>
@@ -72,7 +72,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 
-.main-body {
+.feedback {
     background-color: black;
     color: white;
     padding: 70px 0px;

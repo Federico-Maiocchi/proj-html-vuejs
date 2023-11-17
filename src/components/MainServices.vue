@@ -79,6 +79,7 @@ export default {
 
     .col-6 {
         height: 100%;
+        z-index: 1;
         
 
         .sub-title {

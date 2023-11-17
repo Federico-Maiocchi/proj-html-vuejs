@@ -51,8 +51,8 @@ export default {
                             <p class="date-bat">{{ battle.date }}</p>
                         </div>
                         <div class="social row">
-                            <span class="row align-center"><img src="/img/youtube-icon.png" alt="">Youtube</span>
-                            <span class="row align-center"><img src="/img/twitch-icon.png" alt="">twitch</span>
+                            <span class="row align-center icon"><img src="/img/youtube-icon.png" alt="">Youtube</span>
+                            <span class="row align-center icon"><img src="/img/twitch-icon.png" alt="">twitch</span>
                         </div>
                     </div>
                 </div>
@@ -152,10 +152,9 @@ export default {
     }
 }
 
-.button {
-    padding-top: 35px;
+.icon {
+    cursor: pointer;
 }
-
 
 .social {
     background-color: #28344a ;
@@ -166,4 +165,10 @@ export default {
         justify-content: space-evenly;
     }
 }
+.button {
+    padding-top: 35px;
+}
+
+
+
 </style>

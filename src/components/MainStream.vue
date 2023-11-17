@@ -29,7 +29,7 @@ export default {
 </script>
 
 <template>
-    <div class="main-body">
+    <div class="streaming">
         <div class="container-xs">
             <div class="text-center">
                 <h3 class="sub-title">Live streaming</h3>
@@ -55,7 +55,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 
-.main-body {
+.streaming {
     background-image: url(/img/live-streaming-bg.png);
     background-size:contain;
     background-color: black;

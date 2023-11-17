@@ -56,7 +56,7 @@ export default {
             {
                 squad1: '/img/game-img-5.png',
                 squad2: '/img/game-img-6.png',
-                tournament:'call of duty',
+                tournament:'Fortnite',
                 date:'Decmber 25.2022 4:00 PM',
             },
             {

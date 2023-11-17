@@ -100,6 +100,7 @@ export default {
     border-radius: 50%;
     vertical-align: middle;
     padding: 0 12px;
+    cursor: pointer;
 }
 
 .icon:hover {

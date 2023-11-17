@@ -6,11 +6,15 @@ export default {
         itemMenu: Object,
     },
     data() {
-        return {};
+        return {
+            
+        };
     },
     created() {
     },
-    methods: {},
+    methods: {
+
+    },
     mounted() {
     },
     components: { 
